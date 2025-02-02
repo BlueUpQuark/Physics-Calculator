@@ -19,12 +19,14 @@ void MenuOptions::onedKinematics() {
 	
 	KinematicsChoices KinematicChoices;
 	while (true) {
-		if (getMenuInput() == 1) {
+		int choice = getMenuInput();
+		if (choice == 1) {
 			KinematicChoices.finalVelocity();
 			break;
 		}
-		if (getMenuInput() == 2) {
-
+		else if (choice == 2) {
+			KinematicChoices.timeTaken();
+			break;
 		}
 	}
 	
