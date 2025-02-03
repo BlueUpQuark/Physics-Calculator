@@ -2,6 +2,8 @@
 #include <iostream>
 #include "Useful Functions.h"
 
+// FUNCTIONS FOR THE ONEDKINEMATICS FUNCTION OPTIONS
+
 KinematicsChoices KinematicChoices;
 void KinematicsChoices::finalVelocity() {
 	std::cout << "Okay, let's calculate the final velocity!" << std::endl;
@@ -32,5 +34,9 @@ void KinematicsChoices::timeTaken() {
 
 	std::cout << "Okay, your g value will be " << KinematicChoices.getG() << " meters per second squared." << std::endl;
 	std::cout << "With the chosen values, it would take " << KinematicChoices.tCalculation(KinematicChoices.getH(), KinematicChoices.getG()) << " seconds to reach the ground." << std::endl;
+}
+
+void KinematicsChoices::distanceFell() {
+
 }
 
