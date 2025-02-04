@@ -11,7 +11,7 @@
 
 int main()
 {
-    std::cout << "*****Welcome to the Quark physics calculator V 0.1!*****" << std::endl;
+    std::cout << "*****Welcome to the Quark physics calculator V 1.0!*****" << std::endl;
     std::cout << "Please, choose from the available options to calculate." << std::endl; // JUST THE OPENING MENU
     std::cout << "1. 1-D Kinematics" << std::endl;
     std::cout << "2. Newton's second law" << std::endl;
