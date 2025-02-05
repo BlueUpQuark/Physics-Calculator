@@ -29,6 +29,10 @@ void MenuOptions::onedKinematics() {
 			break;
 		}
 		else if (choice == 3) {
+			KinematicChoices.distanceFell();
+			break;
+		}
+		else if (choice == 4) {
 
 		}
 	}

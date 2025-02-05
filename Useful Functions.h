@@ -7,7 +7,7 @@ inline void clearErrorState() {
 }
 
 inline double getUserInput() {
-    int input;
+    double input;
     std::cout << "Enter a value:" << std::endl;
     while (true) {
         if (std::cin >> input) {

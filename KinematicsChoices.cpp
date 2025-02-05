@@ -37,6 +37,21 @@ void KinematicsChoices::timeTaken() {
 }
 
 void KinematicsChoices::distanceFell() {
+	std::cout << "Okay, let's calculate the distance the object fell!" << std::endl;
+	std::cout << "What do you want g to be?" << std::endl;
+
+	KinematicChoices.setG(getUserInput());
+
+	std::cout << "Okay, your g value will be " << KinematicChoices.getG() << " meters per second squared." << std::endl;
+	std::cout << "Now, how many seconds does the object take to hit the ground?" << std::endl;
+
+	KinematicChoices.setT(getUserInput());
+
+	std::cout << "Okay, your t value will be " << KinematicChoices.getT() << " seconds. " << std::endl;
+	std::cout << "With the chosen values, the object will fall " << KinematicChoices.hCalculation(KinematicChoices.getG(), KinematicChoices.getT()) << " meters." << std::endl;
+}
+
+void KinematicsChoices::accelGravity() {
 
 }
 
