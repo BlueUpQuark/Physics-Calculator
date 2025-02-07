@@ -15,7 +15,7 @@ void MenuOptions::onedKinematics() {
 	std::cout << "4. The acceleration due to gravity" << std::endl;
 	std::cout << "5. The final kinetic energy" << std::endl;
 	std::cout << "6. The potential energy before being dropped" << std::endl;
-	std::cout << "7. The total mechanical energy" << std::endl;
+	std::cout << "7. The final momentum" << std::endl;
 	
 	KinematicsChoices KinematicChoices;
 	while (true) {
@@ -33,8 +33,26 @@ void MenuOptions::onedKinematics() {
 			break;
 		}
 		else if (choice == 4) {
-
+			KinematicChoices.accelGravity();
+			break;
 		}
+		else if (choice == 5) {
+			KinematicChoices.finalKE();
+			break;
+		}
+		else if (choice == 6) {
+			KinematicChoices.initPE();
+			break;
+		}
+		else if (choice == 7) {
+			KinematicChoices.finalMom();
+			break;
+		}
+		else if (choice < 1 || choice > 7) {
+			std::cout << "Invalid input" << std::endl;
+		}
+			
+		
 	}
 	
 

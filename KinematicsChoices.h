@@ -9,6 +9,6 @@ public:
 	void accelGravity();
 	void finalKE();
 	void initPE();
-	void totMechEnergy();
+	void finalMom();
 };
 
