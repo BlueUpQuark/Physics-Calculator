@@ -4,8 +4,13 @@
 #include "MenuOptions.h"
 #include "Useful Functions.h"
 
-//std::vector<int> inputs;
-//int input;
+void mainMenu() {
+    std::cout << "Please, choose from the available options to calculate." << std::endl; // JUST THE OPENING MENU, BUT NO INTRODUCTION
+    std::cout << "1. 1-D Kinematics" << std::endl;
+    std::cout << "2. Newton's second law" << std::endl;
+    std::cout << "3. Exit" << std::endl;
+    std::cout << "" << std::endl;
+}
 
 
 
@@ -22,6 +27,14 @@ int main()
     while (true) {
         if (getMenuInput() == 1) {
             MenuOptions.onedKinematics();
+            int choice = anotherCalculation();
+            if (choice == 1) {
+                mainMenu();
+            }
+            else if (choice == 2) {
+                MenuOptions.onedKinematics_again();
+            }
+            
             break;
         }
 

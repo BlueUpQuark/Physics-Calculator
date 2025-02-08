@@ -21,7 +21,7 @@ inline double getUserInput() {
     return input;
 }
 
-inline double getMenuInput() {
+inline int getMenuInput() {
     int input;
     std::cout << "Enter an option:" << std::endl;
     while (true) {
@@ -34,5 +34,14 @@ inline double getMenuInput() {
         }
     }
     return input;
+}
+
+inline int anotherCalculation() {
+    std::cout << "Would you like to do another calculation?" << std::endl;
+    std::cout << "1. No" << std::endl;
+    std::cout << "2. Yes" << std::endl;
+
+    int choice = getMenuInput();
+    return choice;
 }
 
