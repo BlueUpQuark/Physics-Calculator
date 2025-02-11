@@ -36,12 +36,16 @@ inline int getMenuInput() {
     return input;
 }
 
-inline int anotherCalculation() {
-    std::cout << "Would you like to do another calculation?" << std::endl;
+inline int anotherCalculation(std::string menuOption) {
+    std::cout << "Would you like to do another " << menuOption << " calculation?" << std::endl;
     std::cout << "1. No" << std::endl;
     std::cout << "2. Yes" << std::endl;
 
     int choice = getMenuInput();
     return choice;
+}
+
+inline bool checkStatus() {
+
 }
 

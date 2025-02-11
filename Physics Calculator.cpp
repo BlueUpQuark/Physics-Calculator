@@ -27,16 +27,23 @@ int main()
     while (true) {
         if (getMenuInput() == 1) {
             MenuOptions.onedKinematics();
-            int choice = anotherCalculation();
+            int choice = anotherCalculation("one-d kinematics");
             if (choice == 1) {
                 mainMenu();
             }
             else if (choice == 2) {
-                MenuOptions.onedKinematics_again();
+                do {
+                    MenuOptions.onedKinematics_again();
+                    choice = anotherCalculation("one-d kinematics");
+                } while (choice == 2);
+
+                mainMenu();
             }
             
-            break;
+            
+            
         }
+
 
     }
     
