@@ -45,7 +45,5 @@ inline int anotherCalculation(std::string menuOption) {
     return choice;
 }
 
-inline bool checkStatus() {
 
-}
 

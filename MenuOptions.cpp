@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Useful Functions.h"
 #include "KinematicsChoices.h"
+#include "SecondLawChoices.h"
 
 
 //FUNCTIONS FOR THE MAIN MENU OPTIONS
@@ -102,6 +103,23 @@ void MenuOptions::onedKinematics_again() {
 			std::cout << "Invalid input" << std::endl;
 		}
 
+
+	}
+}
+
+void MenuOptions::secondLaw() {
+	std::cout << "Alright, Newtons second law! What variable do you want to solve for?" << std::endl;
+	std::cout << "1. Net force" << std::endl;
+	std::cout << "2. Mass" << std::endl;
+	std::cout << "3. Acceleration" << std::endl;
+
+	SecondLawChoices secondlawchoices;
+
+	while (true) {
+		int choice = getMenuInput();
+		if (choice == 1) {
+			secondlawchoices.netForce();
+		}
 
 	}
 }

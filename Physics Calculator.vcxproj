@@ -130,11 +130,13 @@
     <ClCompile Include="KinematicsChoices.cpp" />
     <ClCompile Include="MenuOptions.cpp" />
     <ClCompile Include="Physics Calculator.cpp" />
+    <ClCompile Include="SecondLawChoices.cpp" />
     <ClCompile Include="Variables.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="KinematicsChoices.h" />
     <ClInclude Include="MenuOptions.h" />
+    <ClInclude Include="SecondLawChoices.h" />
     <ClInclude Include="Useful Functions.h" />
     <ClInclude Include="Variables.h" />
   </ItemGroup>

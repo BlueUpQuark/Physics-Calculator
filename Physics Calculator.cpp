@@ -25,7 +25,8 @@ int main()
     
     MenuOptions MenuOptions;
     while (true) {
-        if (getMenuInput() == 1) {
+        int choice = getMenuInput();
+        if (choice == 1) {
             MenuOptions.onedKinematics();
             int choice = anotherCalculation("one-d kinematics");
             if (choice == 1) {
@@ -40,8 +41,9 @@ int main()
                 mainMenu();
             }
             
-            
-            
+        }
+        else if (choice == 2) {
+            MenuOptions.secondLaw();
         }
 
 
