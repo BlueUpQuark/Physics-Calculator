@@ -31,6 +31,7 @@ public:
     double KefCalculation(double m, double g, double h);
     double PeiCalculation(double m, double g, double h);
     double PfCalculation(double m, double Vf);
+    double varCalculation(double v1, double v2);
 
 
 

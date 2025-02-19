@@ -12,3 +12,4 @@ public:
 	void finalMom();
 };
 
+extern int check;

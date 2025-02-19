@@ -1,7 +1,14 @@
 #include "Variables.h"
 #include <cmath>
-
+#include "KinematicsChoices.h"
 // THESE ARE THE FORMULAS TO CALCULATE VARIABLES WHEN NEEDED (THE DEFENITIONS)
+
+
+double Variables::varCalculation(double v1, double v2) {
+    if (check == 1) {
+        return v1 * v2;
+    }
+}
 
 double Variables::hCalculation(double g, double t) {
     _g = g;
