@@ -4,9 +4,14 @@
 // THESE ARE THE FORMULAS TO CALCULATE VARIABLES WHEN NEEDED (THE DEFENITIONS)
 
 
-double Variables::varCalculation(double v1, double v2) {
-    if (check == 1) {
-        return v1 * v2;
+double Variables::varCalculation(double v1, double v2, double v3) {
+    switch (check) {
+    case 1: return v1 * v2;
+    case 2: return sqrt((2 * v1) / v2);
+    case 3: return 0.5 * v1 * v2 * v2;
+    case 4: return ((2 * v1) / (v2 * v2));
+    case 5: return v1 * v2 * v3;
+
     }
 }
 

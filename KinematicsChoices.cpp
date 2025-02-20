@@ -25,6 +25,7 @@ void KinematicsChoices::finalVelocity() {
 }
 
 void KinematicsChoices::timeTaken() {
+	check = 2;
 	std::cout << "Okay, let's calculate the time taken!" << std::endl;
 	std::cout << "What do you want h to be?" << std::endl;
 
@@ -40,6 +41,7 @@ void KinematicsChoices::timeTaken() {
 }
 
 void KinematicsChoices::distanceFell() {
+	check = 3;
 	std::cout << "Okay, let's calculate the distance the object fell!" << std::endl;
 	std::cout << "What do you want g to be?" << std::endl;
 
@@ -55,6 +57,7 @@ void KinematicsChoices::distanceFell() {
 }
 
 void KinematicsChoices::accelGravity() {
+	check = 4;
 	std::cout << "Okay, let's calculate the acceleration due to gravity!" << std::endl;
 	std::cout << "What do you want h to be?" << std::endl;
 
@@ -70,6 +73,7 @@ void KinematicsChoices::accelGravity() {
 }
 
 void KinematicsChoices::finalKE() {
+	check = 5;
 	std::cout << "Okay, let's calculate the final kinetic energy!" << std::endl;
 	std::cout << "What do you want the mass to be?" << std::endl;
 
