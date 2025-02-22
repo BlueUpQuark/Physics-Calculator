@@ -3,6 +3,8 @@
 #include "Variables.h"
 #include "MenuOptions.h"
 #include "Useful Functions.h"
+#include <windows.h>
+#include <psapi.h>
 
 void mainMenu() {
     std::cout << "Please, choose from the available options to calculate." << std::endl; // JUST THE OPENING MENU, BUT NO INTRODUCTION
@@ -11,7 +13,6 @@ void mainMenu() {
     std::cout << "3. Exit" << std::endl;
     std::cout << "" << std::endl;
 }
-
 
 
 int main()

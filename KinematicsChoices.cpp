@@ -7,7 +7,7 @@
 KinematicsChoices KinematicChoices;
 int check;
 void KinematicsChoices::finalVelocity() {
-	check = 1;
+	check = 0;
 	std::cout << "Okay, let's calculate the final velocity!" << std::endl;
 	std::cout << "What do you want g to be?" << std::endl;
 
@@ -20,12 +20,12 @@ void KinematicsChoices::finalVelocity() {
 	KinematicChoices.setT(getUserInput());
 
 	std::cout << "Okay, your t value will be " << KinematicChoices.getT() << " seconds. " << std::endl;
-	std::cout << "With the chosen values, the final velocity of the object is " << KinematicChoices.varCalculation(KinematicChoices.getG(), KinematicChoices.getT()) << " meters per second." << std::endl;
+	std::cout << "With the chosen values, the final velocity of the object is " << KinematicChoices.varCalculation(KinematicChoices.getG(), KinematicChoices.getT(), 1) << " meters per second." << std::endl;
 	//std::cout << "With the chosen values, the final velocity of the object is " << KinematicChoices.vfCalculation(KinematicChoices.getG(), KinematicChoices.getT()) << " meters per second." << std::endl;
 }
 
 void KinematicsChoices::timeTaken() {
-	check = 2;
+	check = 1;
 	std::cout << "Okay, let's calculate the time taken!" << std::endl;
 	std::cout << "What do you want h to be?" << std::endl;
 
@@ -41,7 +41,7 @@ void KinematicsChoices::timeTaken() {
 }
 
 void KinematicsChoices::distanceFell() {
-	check = 3;
+	check = 2;
 	std::cout << "Okay, let's calculate the distance the object fell!" << std::endl;
 	std::cout << "What do you want g to be?" << std::endl;
 
@@ -57,7 +57,7 @@ void KinematicsChoices::distanceFell() {
 }
 
 void KinematicsChoices::accelGravity() {
-	check = 4;
+	check = 3;
 	std::cout << "Okay, let's calculate the acceleration due to gravity!" << std::endl;
 	std::cout << "What do you want h to be?" << std::endl;
 
@@ -73,7 +73,7 @@ void KinematicsChoices::accelGravity() {
 }
 
 void KinematicsChoices::finalKE() {
-	check = 5;
+	check = 4;
 	std::cout << "Okay, let's calculate the final kinetic energy!" << std::endl;
 	std::cout << "What do you want the mass to be?" << std::endl;
 
