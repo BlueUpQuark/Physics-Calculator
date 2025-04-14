@@ -11,4 +11,10 @@ void SecondLawChoices::netForce() {
 	secondlawchoices.setM(getUserInput());
 
 	std::cout << "Okay, the mass will be " << secondlawchoices.getM() << " kg's" << std::endl;
+	std::cout << "Now, what do you want the acceleration to be?" << std::endl;
+
+	secondlawchoices.setA(getUserInput());
+
+	std::cout << "Okay, the acceleration will be " << secondlawchoices.getA() << " meters per second squared" << std::endl;
+	std::cout << "The net force is " << secondlawchoices.netForceCalc(secondlawchoices.getM(), secondlawchoices.getA()) << " newtons!" << std::endl;
 }

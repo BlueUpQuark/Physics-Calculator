@@ -4,7 +4,7 @@
 // THESE ARE THE FORMULAS TO CALCULATE VARIABLES WHEN NEEDED (THE DEFENITIONS)
 
 
-double Variables::varCalculation(double v1, double v2, double v3) {
+double Variables::varCalculation(double v1, double v2, double v3) {  // WHEN V3 ISN'T NEEDED, JUST PLUG IN 1 FOR V3
     switch (check) {
     case 0: return v1 * v2; // Final Velocity = g * t
     case 1: return sqrt((2 * v1) / v2); // Time Taken

@@ -94,6 +94,7 @@ void KinematicsChoices::finalKE() {
 }
 
 void KinematicsChoices::initPE() {
+	check = 12;
 	std::cout << "Okay, let's calculate the initial potential energy!" << std::endl;
 	std::cout << "What do you want the mass to be?" << std::endl;
 
@@ -114,6 +115,7 @@ void KinematicsChoices::initPE() {
 }
 
 void KinematicsChoices::finalMom() {
+	check = 13;
 	std::cout << "Okay, let's calculate the final momentum!" << std::endl;
 	std::cout << "What do you want the mass to be?" << std::endl;
 
