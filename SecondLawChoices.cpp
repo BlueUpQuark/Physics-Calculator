@@ -34,7 +34,10 @@ void SecondLawChoices::mass() {
 	secondlawchoices.setA(getUserInput());
 
 	std::cout << "Okay, the acceleration will be " << secondlawchoices.getA() << " meters per second squared." << std::endl;
+	std::cout << "Based on these values, the mass is " << secondlawchoices.mCalculation(secondlawchoices.getNf(), secondlawchoices.getA()) << " kg's!" << std::endl;
 }
+
+
 
 
 
