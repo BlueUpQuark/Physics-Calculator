@@ -120,6 +120,9 @@ void MenuOptions::secondLaw() {
 		if (choice == 1) {
 			secondlawchoices.netForce();
 		}
+		else if (choice == 2) {
+			secondlawchoices.mass();
+		}
 
 	}
 }
